@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(0, 12, 34);
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    background-color: #42b588 ;
+    padding: 15px 20px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+.data-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-content {
+    margin-top: auto;
+    padding: 10px 20px;
+}
+
+.Logo {
+    width: 130px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.menu-data {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    background-color: white;
+    color: rgb(0, 12, 34);
+}
+
+.size-icon {
+    font-size: 26px;
+}
+
+/* Estilos para el enlace de búsqueda */
+a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 40px; /* Más redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el campo de entrada */
+.search-input {
+    padding: 6px 10px;
+    width: 200px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 40px; /* Bordes redondeados */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+    padding: 12px 20px;
+    font-size: 12px;
+    color: white;
+    background-color: gray;
+    border-radius: 40px; /* Más redondeado */
+    cursor: pointer;
+    margin-left: 20px; /* Separar el botón del campo de entrada */
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.search-button:focus {
+    border: none;
+    outline: none;
+}
+
+.search-button:hover {
+    background-color: lightgray;
+}
+
+#Menu-bar {
+    display: none;
+    margin-left: auto;
+}
+
+#close {
+    display: none;
+}
+
+@media (max-width:761px) {
+    .menu-data {
+        position: absolute;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-end;
+        left: 100%;
+        top: 0;
+        transform: translate(-100%);
+        background-color: black;
+        width: 250px;
+        padding: 20px;
+        transition: display ease-in 5s;
+        z-index: -10;
+    }
+
+    #Menu-bar {
+        display: block;
+    }
+
