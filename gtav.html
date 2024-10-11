@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego 1 | VipiMesga</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        /* Mejoras visuales */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .game-cover {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .game-cover img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .synopsis {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirements ul li {
+            background-color: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            padding: 15px 25px;
+            font-size: 18px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="data-container">
+        <img src="img/logo.png" class="Logo">
+        <div id="menu-time" class="menu-data">
+            <a id="close" onclick="closebar()"><i class="fa-solid fa-xmark"></i></a>
+            <a href="index.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Categorías</a>
+            <a href="#">Requisitos</a>
+            <a href="javascript:void(0);" onclick="toggleSearch()">🔍</a>
+        </div>
+        <a id="Menu-bar" onclick="menubar()"><i class="size-icon fa-solid fa-bars"></i></a>
+    </div>
+</nav>
+
+<!-- Contenido de la página -->
+<section class="container mt-5">
+    <!-- Portada del juego -->
+    <h1>Grand Theft Auto V</h1>
+    <div class="game-cover">
+        <img src="img/gta%20v.jpg" alt="GTA V" class="img-fluid">
+    </div>
+
+    <!-- Información del juego -->
+
+    <p class="text-center"><strong>Fecha de lanzamiento:</strong> 17 de septiembre de 2013 | <strong>Plataformas:</strong> PC, PS4, Xbox One</p>
+
+    <!-- Sinopsis -->
+    <div class="synopsis">
+        <h2>Sinopsis</h2>
+        <p>
+            Vive la vida de un criminal en Los Santos y el condado de Blaine en <strong>Grand Theft Auto V</strong>, el juego de mundo abierto más ambicioso de Rockstar. Controla a tres personajes diferentes mientras planean y ejecutan algunos de los robos más audaces en la historia del crimen. Con un mundo abierto expansivo, misiones intensas, y una narrativa cautivante, GTA V redefine el género de los juegos de acción y aventura.
+        </p>
+    </div>
+
+    <!-- Tráiler -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2>Tráiler</h2>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/QkkoHAzjnUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Requisitos del sistema -->
+    <div class="row mt-5">
+        <div class="col-12 requirements">
+            <h2>Requisitos del sistema</h2>
+            <ul>
+                <li><strong>Sistema operativo:</strong> Windows 10</li>
+                <li><strong>Procesador:</strong> Intel Core i5</li>
+                <li><strong>Memoria:</strong> 8 GB de RAM</li>
+                <li><strong>Gráficos:</strong> NVIDIA GTX 660</li>
+                <li><strong>Almacenamiento:</strong> 72 GB de espacio disponible</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Enlace de descarga -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <a href="#" class="btn btn-primary btn-lg">Descargar</a>
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/7103fc097b.js" crossorigin="anonymous"></script>
+<script src="js/navbar.js"></script>
+<script src="js/buscar.js"></script>
+</body>
+</html>
