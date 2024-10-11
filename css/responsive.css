@@ -1,1 +1,24 @@
 
+/* Estilos para pantallas medianas y pequeñas */
+@media (max-width: 991px) {
+    .juegos .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .pagination {
+        margin-top: 20px;
+    }
+}
+
+/* Ajustes para pantallas móviles (max-width: 767px) */
+@media (max-width: 767px) {
+    .juegos .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .pagination a {
+        padding: 6px 12px;
+    }
+}
