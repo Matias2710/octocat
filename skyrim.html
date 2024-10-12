@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elder Scrolls V: Skyrim Legendary Edition | VipiMesga</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages-style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="data-container">
+        <img src="img/logo.png" class="Logo">
+        <div id="menu-time" class="menu-data">
+            <a id="close" onclick="closebar()"><i class="fa-solid fa-xmark"></i></a>
+            <a href="index.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Categorías</a>
+            <a href="#">Requisitos</a>
+            <a href="javascript:void(0);" onclick="toggleSearch()">🔍</a>
+        </div>
+        <a id="Menu-bar" onclick="menubar()"><i class="size-icon fa-solid fa-bars"></i></a>
+    </div>
+</nav>
+
+<!-- Contenido de la página -->
+<section class="container mt-5">
+    <!-- Portada del juego -->
+    <h1>The Elder Scrolls V: Skyrim Legendary Edition</h1>
+    <div class="game-cover">
+        <img src="img/skyrim.jpg" alt="Skyrim Legendary Edition" class="img-fluid">
+    </div>
+
+    <!-- Información del juego -->
+    <p class="text-center"><strong>Fecha de lanzamiento:</strong> 4 de junio de 2013 | <strong>Plataformas:</strong> PC, PS3, Xbox 360</p>
+
+    <!-- Tráiler -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2>Tráiler</h2>
+            <iframe width="100%" height="700px" src="https://www.youtube.com/embed/JSRtYpNRoN0" title="Skyrim Legendary Edition Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Sinopsis -->
+    <div class="synopsis">
+        <h2>Sinopsis</h2>
+        <p>
+            The Elder Scrolls V: Skyrim Legendary Edition es un juego de rol de mundo abierto que incluye el juego base junto con sus tres expansiones: Dawnguard, Hearthfire y Dragonborn. Los jugadores asumen el papel del Dragonborn, un héroe profetizado para salvar al mundo de la amenaza de Alduin, el devorador de mundos.
+        </p>
+    </div>
+
+    <!-- Requisitos del sistema -->
+    <div class="row mt-5">
+        <div class="col-12 requirements">
+            <h2>Requisitos del sistema</h2>
+            <ul>
+                <li><strong>Sistema operativo:</strong> Windows 7/8.1/10 (64-bit)</li>
+                <li><strong>Procesador:</strong> Intel i5-750/AMD Phenom II X4-945</li>
+                <li><strong>Memoria:</strong> 8 GB de RAM</li>
+                <li><strong>Gráficos:</strong> NVIDIA GTX 470 1GB /AMD HD 7870 2GB</li>
+                <li><strong>Almacenamiento:</strong> 12 GB de espacio disponible</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Enlace de descarga -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <a href="#" class="btn btn-primary btn-lg">Descargar</a>
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/7103fc097b.js" crossorigin="anonymous"></script>
+<script src="js/navbar.js"></script>
+<script src="js/buscar.js"></script>
+</body>
+</html>
