@@ -29,6 +29,7 @@
     color: white;
 }
 
+
 .navbar a:hover {
     text-decoration: none;
     color: gray;
@@ -61,6 +62,7 @@ a {
     font-weight: bold;
 }
 
+
 .menu-data {
     margin-left: auto;
     display: flex;
@@ -69,7 +71,7 @@ a {
 
 a:hover {
     background-color: white;
-    color: rgb(0, 12, 34);
+    color: gray;
 }
 
 .size-icon {
@@ -223,7 +225,9 @@ body, html {
     height: 100%;
     overflow-x: hidden; /* Esto evita el scroll horizontal innecesario */
 
+
 }
+
 
 .container {
     margin: 0 auto;
@@ -270,6 +274,37 @@ h1, h2 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el menú desplegable de "Requisitos" */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+a:not(.dropdown-content a):hover {
+    background-color: white;
+    color: gray;
 }
 
 #Menu-bar {
