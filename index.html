@@ -14,20 +14,30 @@
 <body>
 <nav class="navbar">
     <div class="data-container">
-        <img src="img/logo.png" class="Logo">
+            <img src="img/logo.png" class="Logo">
         <div id="menu-time" class="menu-data">
 
             <a id="close" onclick="closebar()"><i class="fa-solid fa-xmark"></i></a> <!-- Botón de cerrar -->
             <a href="index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="#">Categorías</a>
-            <a href="#">Requisitos</a>
+
+            <!-- Menú desplegable para "Requisitos" -->
+            <div class="dropdown">
+                <a class="dropbtn" onclick="toggleDropdown()">Requisitos</a>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a href="javascript:void(0);" onclick="filtrarPorRequisito('altos')">Altos</a>
+                    <a href="javascript:void(0);" onclick="filtrarPorRequisito('medios')">Medios</a>
+                    <a href="javascript:void(0);" onclick="filtrarPorRequisito('bajos')">Bajos</a>
+                </div>
+            </div>
+
             <a href="javascript:void(0);" onclick="toggleSearch()">🔍</a>
 
-            <!-- Barra de búsqueda oculta inicialmente -->
+            <!-- Barra de búsqueda -->
             <div id="search-bar" class="search-container" style="display: none;">
-                <input type="text" class="search-input" placeholder="Minecraft, Fall Guys, Fortni..." />
-                <button type="submit" class="search-button">Buscar</button>
+                <input type="text" class="search-input" id="search-input" placeholder="Busca un juego..." />
+                <button type="button" class="search-button" onclick="buscarJuego()">Buscar</button>
             </div>
         </div>
         <a id="Menu-bar" onclick="menubar()"><i class="size-icon fa-solid fa-bars"></i></a>
@@ -37,118 +47,53 @@
 <section class="juegos">
     <div class="container">
         <div class="row">
-            <!-- Juego 1-8 -->
-            <div class="col-md-6 col-lg-3">
+            <!-- Juegos -->
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="altos" data-nombre="GTA V">
                 <div class="game-card">
-                    <a href="gtav.html">
+                    <a href="games-page/gtav.html">
                         <img src="img/gta%20v.jpg" alt="GTA V" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="medios" data-nombre="Far Cry 3">
                 <div class="game-card">
-                    <a href="farcry3.html">
+                    <a href="games-page/farcry3.html">
                         <img src="img/farcry3.jpg" alt="Far Cry 3" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="medios" data-nombre="Skyrim">
                 <div class="game-card">
-                    <a href="skyrim.html">
+                    <a href="games-page/skyrim.html">
                         <img src="img/skyrim.jpg" alt="Skyrim" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="altos" data-nombre="Dragon Ball">
                 <div class="game-card">
-                    <a href="dbszue.html">
+                    <a href="games-page/dbszue.html">
                         <img src="img/dragon-ball-sparking-zero-ultimate-edition-cover-uum.jpg" alt="Dragon Ball Sparking Zero Ultimate Edition" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="altos" data-nombre="Space Marine">
                 <div class="game-card">
                     <a href="spacemarine.html">
                         <img src="img/spacemarine.jpg" alt="Space Marine" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="altos" data-nombre="Starfield">
                 <div class="game-card">
                     <a href="starfield.html">
                         <img src="img/starfield.jpg" alt="Starfield" class="img-fluid">
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 juego" data-requisitos="bajos" data-nombre="Liars Bar">
                 <div class="game-card">
-                    <a href="liarsbar.html">
+                    <a href="games-page/liarsbar.html">
                         <img src="img/Liars-Bar.jpg" alt="Liar's Bar" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego8.html">
-                        <img src="img/game8.jpg" alt="Juego 8" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-
-            <!-- Juego 9-16 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego9.html">
-                        <img src="img/game9.jpg" alt="Juego 9" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego10.html">
-                        <img src="img/game10.jpg" alt="Juego 10" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego11.html">
-                        <img src="img/game11.jpg" alt="Juego 11" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego12.html">
-                        <img src="img/game12.jpg" alt="Juego 12" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego13.html">
-                        <img src="img/game13.jpg" alt="Juego 13" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego14.html">
-                        <img src="img/game14.jpg" alt="Juego 14" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego15.html">
-                        <img src="img/game15.jpg" alt="Juego 15" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="game-card">
-                    <a href="juego16.html">
-                        <img src="img/game16.jpg" alt="Juego 16" class="img-fluid">
                     </a>
                 </div>
             </div>
@@ -168,5 +113,8 @@
 <script src="https://kit.fontawesome.com/7103fc097b.js" crossorigin="anonymous"></script>
 <script src="js/navbar.js"></script>
 <script src="js/buscar.js"></script>
+<script src="js/buscarjuegos.js"></script>
+<script src="js/requisitos.js"></script>
+
 </body>
 </html>
