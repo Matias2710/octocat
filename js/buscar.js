@@ -4,5 +4,6 @@ function toggleSearch() {
         searchBar.style.display = "flex";
     } else {
         searchBar.style.display = "none";
+
     }
 }
