@@ -1,9 +1,8 @@
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Georgia", Times, serif;
 }
 
 .hero-section {
@@ -22,6 +21,13 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #42b588; /* Color de fondo de la navbar */
+  padding: 15px; /* Espacio alrededor del contenido */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombras */
 }
 
 .navbar a {
@@ -54,7 +60,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px 15px;
     border-radius: 25px;
     transition: background-color 0.3s ease-in;
@@ -62,16 +68,10 @@ a {
     font-weight: bold;
 }
 
-
 .menu-data {
     margin-left: auto;
     display: flex;
     align-items: center;
-}
-
-a:hover {
-    background-color: white;
-    color: gray;
 }
 
 .size-icon {
@@ -86,14 +86,10 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    color: #0056b3;
-}
-
 /* Contenedor de la barra de búsqueda */
 .search-container {
     display: flex;
-    align-items: center;
+    align-items: rigt;
     justify-content: center;
     margin-top: 1px;
     padding: 5px;
@@ -101,50 +97,50 @@ a:hover {
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    position: right;
 }
 
 /* Estilos para el campo de entrada */
+.search-bar {
+  display: none; /* Lo mantenemos oculto por defecto */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 10px;
+  background-color: #f1f1f1; /* Color del fondo de la barra de búsqueda */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra debajo de la barra */
+}
+
 .search-input {
-    padding: 6px 10px;
-    width: 70%; /* Ajuste de ancho */
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 40px;
-    outline: none;
-    transition: border-color 0.3s;
+  width: 80%; /* Ancho del campo de texto */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .search-input:focus {
-    border-color: #007bff;
-    outline: none;
+    outline: 2px solid #ccc;
 }
 
-/* Estilos para el botón de búsqueda */
 .search-button {
-    padding: 12px 20px;
-    font-size: 12px;
-    color: white;
-    background-color: gray;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-left: 5px;
-    transition: background-color 0.3s;
-    border: none;
-    width: 30%;
+  padding: 8px 15px;
+  background-color: #3c9f83;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .search-button:focus {
-    border: none;
-    outline: none;
+    outline: 2px solid #ccc;
 }
 
 .search-button:hover {
-    background-color: lightgray;
+  background-color: #357a68;
 }
 
 .game-card {
     margin-bottom: 20px;
     text-align: center;
+
 }
 .game-card img {
     border-radius: 10px;
@@ -189,9 +185,8 @@ a:hover {
     outline: none;
 }
         .juegos {
-            margin-top: 50px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para las tarjetas */
             border-radius: 10px;
         }
         .pagination {
@@ -228,7 +223,6 @@ body, html {
 
 }
 
-
 .container {
     margin: 0 auto;
     max-width: 1200px; /* Limita el ancho máximo de la página */
@@ -239,11 +233,6 @@ body, html {
 .juegos {
     display: flex;
     justify-content: center;
-}
-
-.game-card {
-    margin: 0 auto; /* Centra las tarjetas de los juegos */
-    text-align: center;
 }
 
 img {
@@ -303,8 +292,7 @@ h1, h2 {
 }
 
 a:not(.dropdown-content a):hover {
-    background-color: white;
-    color: gray;
+    color: #e3e2e2;
 }
 
 #Menu-bar {
